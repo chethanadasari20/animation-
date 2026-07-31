@@ -1,6 +1,6 @@
 import turtle
 import math
-screen=tuple.screen()
+screen=turtle.screen()
 screen.bgcolor("black")
 t=turtle.Turtle()
 t.speed(1)
