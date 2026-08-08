@@ -2,6 +2,10 @@ import pygame
 import math
 import random
 pygame.init()
+pygame.mixer.init()
+pygame.mixer.music.load("music.mp3")
+pygame.mixer.music.set_volume(0.4)
+pygame.mixer.music.play(-1)
 WIDTH, HEIGHT = 1000, 700
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("❤️ Heartbeat & Sparkles")
@@ -208,4 +212,5 @@ while running:
     )
     pygame.display.flip()
     clock.tick(60)
+pygame.mixer.music.stop()
 pygame.quit()
